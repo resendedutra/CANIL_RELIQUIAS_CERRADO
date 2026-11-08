@@ -9,45 +9,44 @@
     width: 100vw;
     height: auto;
     background: #252525;
-    padding: 15px;
+    padding: 12px; /* Reduzido de 15px */
     display: flex;
     justify-content: center;
     align-items: center;
     position: fixed;
-    z-index: 100; /* Aumentado para o menu ficar sobre tudo */
+    z-index: 100;
 }
 
-/* Modificado para suportar a tag nav adicionada no html */
 .cabecalho nav {
-    margin: 0px 400px;
+    margin: 0px 200px; /* Reduzido de 400px (400px quebrava muito rápido em telas médias) */
     display: flex;
 }
 
 .cabecalho img {
-    width: 80px;
+    width: 60px; /* Reduzido de 80px */
     height: auto;
-    border-radius: 40px;
+    border-radius: 30px;
 }
 
 .cabecalho a {
-    font-size: 24px;
+    font-size: 18px; /* Reduzido de 24px */
     font-weight: 600;
     color: #C4955D;
     text-decoration: none;
-    margin: 0px 15px;
+    margin: 0px 12px;
     white-space: nowrap;
 }
 
 .cabecalho button {
-    width: 200px;
-    font-size: 18px;
+    width: 150px; /* Reduzido de 200px */
+    font-size: 14px; /* Reduzido de 18px */
     font-weight: 600;
     text-transform: uppercase;
     color: #FFFFFF;
     background: #C4955D;
-    padding: 15px;
+    padding: 10px 15px;
     border: none;
-    border-radius: 30px;
+    border-radius: 22px;
     cursor: pointer;
 }
 
@@ -62,7 +61,7 @@
     background: #7C685D;
     display: flex;
     align-items: center;
-    padding: 150px;
+    padding: 110px; /* Reduzido de 150px */
 }
 
 .inicio-hero {
@@ -71,29 +70,29 @@
     display: flex;
     flex-direction: column;
     align-items: start;
-    margin: 100px 0px 0px;
+    margin: 75px 0px 0px; /* Reduzido de 100px */
 }
 
 .inicio-hero h1 {
-    font-size: 70px;
+    font-size: 52px; /* Reduzido de 70px */
     font-weight: 600;
     color: #FFFFFF;
 }
 
 .inicio-hero span {
     color: #252525;
-    font-size: 35px;
+    font-size: 26px; /* Reduzido de 35px */
     font-weight: 700;
-    letter-spacing: 6.5px;
+    letter-spacing: 4px;
     line-height: 1.2;
     text-transform: uppercase;
 }
 
 .inicio-hero p {
     color: #FFFFFF;
-    font-size: 28px;
-    line-height: 45px;
-    margin: 50px 0px;
+    font-size: 20px; /* Reduzido de 28px */
+    line-height: 34px; /* Reduzido de 45px */
+    margin: 38px 0px; /* Reduzido de 50px */
 }
 
 .inicio-imagem {
@@ -101,24 +100,24 @@
     height: auto;
     display: flex;
     justify-content: center;
-    margin: 100px 0px 0px;
+    margin: 75px 0px 0px; /* Reduzido de 100px */
 }
 
 .inicio-imagem img {
-    width: 750px;
+    width: 560px; /* Reduzido de 750px */
     height: auto;
-    border-radius: 400px;
-    box-shadow: 0px 0px 20px 20px rgba(124, 92, 76, 0.4);
+    border-radius: 300px;
+    box-shadow: 0px 0px 15px 15px rgba(124, 92, 76, 0.4);
 }
 
 .inicio-hero button {
     background: #252525;
     color: #FFFFFF;
-    font-size: 28px;
-    width: 500px;
-    height: 80px;
+    font-size: 20px; /* Reduzido de 28px */
+    width: 375px; /* Reduzido de 500px */
+    height: 60px; /* Reduzido de 80px */
     border: none;
-    border-radius: 30px;
+    border-radius: 22px;
     cursor: pointer;
 }
 
@@ -126,30 +125,30 @@
     width: 100%;
     height: auto;
     display: flex;
-    margin: 75px 0px;
-    gap: 50px;
+    margin: 56px 0px; /* Reduzido de 75px */
+    gap: 38px; /* Reduzido de 50px */
 }
 
 .contador-item {
     background: #252525;
     color: #FFFFFF;
     border-radius: 8px;
-    width: 210px;
+    width: 160px; /* Reduzido de 210px */
     height: auto;
-    padding: 32px;
+    padding: 24px; /* Reduzido de 32px */
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 12px; /* Reduzido de 16px */
 }
 
 .numero {
-    font-size: 30px;
+    font-size: 24px; /* Reduzido de 30px */
     text-align: center;
     margin: 0px auto;
 }
 
 .contador-item p {
-    font-size: 18px;
+    font-size: 14px; /* Reduzido de 18px */
     text-align: center;
     margin: 0px auto;
 }
@@ -160,28 +159,28 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 50px;
+    margin-bottom: 38px; /* Reduzido de 50px */
 }
 
 .sobre h2{
-    font-size: 70px;
+    font-size: 52px; /* Reduzido de 70px */
     font-weight: 600;
     color: #252525;
-    margin: 50px 0px 0px;
+    margin: 38px 0px 0px; /* Reduzido de 50px */
 }
 
 .sobre span {
-    font-size: 32px;
+    font-size: 24px; /* Reduzido de 32px */
     color: #7C685D;
     font-style: italic;
 }
 
 .container {
     width: 100%;
-    height: 300px;
-    margin: 75px 0px 0px;
+    height: 225px; /* Reduzido de 300px */
+    margin: 56px 0px 0px; /* Reduzido de 75px */
     mask-image: linear-gradient(to right, transparent, #000 10% 90%, transparent);
-    margin-bottom: 50px
+    margin-bottom: 38px; /* Reduzido de 50px */
 }
 
 .carrossel:hover .item {
@@ -199,8 +198,8 @@
 }
 
 .item {
-    width: 500px;
-    height: 300px;
+    width: 375px; /* Reduzido de 500px */
+    height: 225px; /* Reduzido de 300px */
     position: absolute;
     left: 100%;
     animation: autoRunSobre var(--tempo) linear infinite;
@@ -218,16 +217,15 @@
     from {
         left: 100%;
     }
-
     to {
-        left: -500px;
+        left: -375px; /* Ajustado proporcionalmente ao tamanho do item */
     }
 }
 
 .sobre p {
-    font-size: 24px;
+    font-size: 18px; /* Reduzido de 24px */
     line-height: 1.5;
-    width: 50%;
+    width: 60%; /* Aumentei um pouquinho para melhor leitura no desktop */
 }
 
 .servicos {
@@ -241,14 +239,14 @@
 }
 
 .servicos h2 {
-    font-size: 70px;
+    font-size: 52px;
     font-weight: 600;
     color: #FFFFFF;
-    margin: 50px 0px 0px;
+    margin: 38px 0px 0px;
 }
 
 .servicos span {
-    font-size: 32px;
+    font-size: 24px;
     color: #FFFFFF;
     font-style: italic;
 }
@@ -260,21 +258,21 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 32px;
-    margin: 100px auto;
+    gap: 24px; /* Reduzido de 32px */
+    margin: 75px auto; /* Reduzido de 100px */
 }
 
 .servicos-slots {
     width: 25%;
-    min-width: 300px;
+    min-width: 225px; /* Reduzido de 300px */
     min-height: 300px;
-    height: 450px;
+    height: 340px; /* Reduzido de 450px */
     background: #7C685D;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 32px;
-    border-radius: 32px;
+    padding: 24px; /* Reduzido de 32px */
+    border-radius: 24px; /* Reduzido de 32px */
     cursor: pointer;
     
     opacity: 0;
@@ -287,20 +285,20 @@
 }
 
 .card-icon {
-    font-size: 70px;
+    font-size: 52px; /* Reduzido de 70px */
     color: #252525;
 }
 
 .servicos-slots h3 {
-    font-size: 32px;
+    font-size: 24px; /* Reduzido de 32px */
     font-weight: 700;
     color: #FFFFFF;
-    margin: 30px 0px;
+    margin: 22px 0px; /* Reduzido de 30px */
     text-align: center;
 }
 
 .slots-p2 {
-    font-size: 24px;
+    font-size: 16px; /* Reduzido de 24px */
     text-align: justify;
     color: #252525;
 }
@@ -328,14 +326,14 @@
 }
 
 .caes h2 {
-    font-size: 70px;
+    font-size: 52px;
     font-weight: 600;
     color: #FFFFFF;
-    margin: 50px 0px 0px;
+    margin: 38px 0px 0px;
 }
 
 .caes span {
-    font-size: 32px;
+    font-size: 24px;
     color: #FFFFFF;
     font-style: italic;
 }
@@ -346,54 +344,54 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 64px;
-    margin: 100px auto;
+    gap: 48px; /* Reduzido de 64px */
+    margin: 75px auto;
 }
 
 .caes-slots {
-    width: 300px;
+    width: 225px; /* Reduzido de 300px */
     height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 32px;
-    gap: 8px;
-    margin-top: 80px;
+    padding: 24px;
+    gap: 6px; /* Reduzido de 8px */
+    margin-top: 60px; /* Reduzido de 80px */
 }
 
 .caes-slots img {
-    width: 200px;
-    border-radius: 100px;
+    width: 150px; /* Reduzido de 200px */
+    border-radius: 75px;
 }
 
 .caes-slots h3 {
-    font-size: 48px;
+    font-size: 36px; /* Reduzido de 48px */
     font-weight: 700;
     color: #252525;
 }
 
 .caes-slots h4 {
-    font-size: 32px;
+    font-size: 24px; /* Reduzido de 32px */
     font-weight: 600;
     color: #252525;
 }
 
 .caes-slots p {
-    font-size: 24px;
+    font-size: 18px; /* Reduzido de 24px */
     color: #C4955D;
 }
 
 .caes-slots button {
-    width: 250px;
-    height: 60px;
-    padding: 16px;
+    width: 180px; /* Reduzido de 250px */
+    height: 45px; /* Reduzido de 60px */
+    padding: 10px;
     background: #252525;
-    font-size: 24px;
+    font-size: 18px; /* Reduzido de 24px */
     font-weight: 600;
     color: #FFFFFF;
     border: none;
-    border-radius: 25px;
+    border-radius: 20px;
     margin-top: 8px;
     cursor: pointer;
 }
@@ -405,8 +403,8 @@
 
 .popup {
     width: 90%;
-    max-width: 600px;
-    padding: 30px;
+    max-width: 450px; /* Reduzido de 600px */
+    padding: 22px; /* Reduzido de 30px */
     background: #252525;
     border: none;
     border-radius: 12px;
@@ -419,29 +417,29 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 15px; /* Reduzido de 20px */
 }
 
 .popup h2 {
-    font-size: 70px;
+    font-size: 52px; /* Reduzido de 70px */
     font-weight: 700;
     color: #C4955D;
 }
 
 .popup img {
     width: 100%;
-    max-width: 600px;
+    max-width: 450px;
     height: auto;
     border-radius: 6px;
 }
 
 .voltar-popup {
-    width: 150px;
-    height: 60px;
+    width: 110px; /* Reduzido de 150px */
+    height: 45px; /* Reduzido de 60px */
     background: #C4955D;
     border: none;
-    border-radius: 30px;
-    font-size: 24px;
+    border-radius: 22px;
+    font-size: 18px; /* Reduzido de 24px */
     font-weight: 600;
     color: #FFFFFF;
     cursor: pointer;
@@ -459,14 +457,14 @@
 }
 
 .diretrizes h2 {
-    font-size: 70px;
+    font-size: 52px;
     font-weight: 600;
     color: #252525;
-    margin: 50px 0px 0px;
+    margin: 38px 0px 0px;
 }
 
 .diretrizes span {
-    font-size: 32px;
+    font-size: 24px;
     color: #252525;
     font-style: italic;
 }
@@ -478,84 +476,84 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 32px;
-    margin: 100px auto;
+    gap: 24px; /* Reduzido de 32px */
+    margin: 75px auto;
 }
 
 .diretrizes-slots {
     width: 18%;
-    min-width: 300px;
-    min-height: 300px;
-    height: 700px;
+    min-width: 225px; /* Reduzido de 300px */
+    min-height: 525px; /* Modificado de fixo (700px) para mínimo, evita bugs no texto */
+    height: auto; 
     background: #FFFFFF;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 32px;
-    padding: 32px;
-    border-radius: 32px;
+    gap: 24px;
+    padding: 24px;
+    border-radius: 24px;
 }
 
 .diretrizes-slots img {
     width: 100%;
-    border-radius: 16px;
+    border-radius: 12px;
 }
 
 .diretrizes-slots h3 {
-    font-size: 40px;
+    font-size: 30px; /* Reduzido de 40px */
     font-weight: 700;
     color: #252525;
 }
 
 .diretrizes-slots p {
-    font-size: 24px;
+    font-size: 16px; /* Reduzido de 24px */
     color: #C4955D;
 }
 
 .footer {
     width: 100vw;
-    min-height: 300px;
+    min-height: 225px; /* Reduzido de 300px */
     height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 100px;
+    padding: 75px; /* Reduzido de 100px */
     background: #252525;
     overflow-x: hidden;
-    gap: 350px;
+    gap: 150px; /* Ajuste para não empurrar muito os itens (era absurdo de grande) */
 }
 
 .footer-logo {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 16px;
+    gap: 12px;
 }
 
 .footer-logo img {
-    width: 200px;
+    width: 150px; /* Reduzido de 200px */
     height: auto;
-    border-radius: 400px;
-    box-shadow: 0px 0px 20px 20px rgba(124, 92, 76, 0.4);
+    border-radius: 200px;
+    box-shadow: 0px 0px 15px 15px rgba(124, 92, 76, 0.4);
 }
 
 .footer-logo p {
-    font-size: 22px;
+    font-size: 16px; /* Reduzido de 22px */
     color: #FFFFFF;
-    width: 350px;
+    width: 260px; /* Reduzido de 350px */
     text-align: center;
 }
 
 .footer-contatos {
-    width: 300px;
+    width: 225px; /* Reduzido de 300px */
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 32px;
+    gap: 24px; /* Reduzido de 32px */
 }
 
 .footer-contatos h4 {
-    font-size: 48px;
+    font-size: 36px; /* Reduzido de 48px */
     font-weight: 600;
     color: #FFFFFF;
 }
@@ -563,10 +561,10 @@
 .footer-icones {
     display: flex;
     flex-direction: column;
-    gap: 32px;
+    gap: 24px;
 }
 .card-icon {
-    font-size: 30px;
+    font-size: 22px; /* Reduzido de 30px */
     color: #FFFFFF;
     text-transform: capitalize;
 }
@@ -579,11 +577,11 @@
     /* Configuração do Header com Menu Hambúrguer */
     .cabecalho {
         justify-content: space-between;
-        padding: 15px 40px;
+        padding: 12px 30px; /* Adaptado */
     }
 
     .cabecalho nav {
-        display: none; /* Escondido por padrão no modo mobile/tablet */
+        display: none; 
         position: absolute;
         top: 100%;
         left: 0;
@@ -596,26 +594,23 @@
         margin: 0;
     }
     
-    /* Classe adicionada via JS para exibir o menu */
     .cabecalho nav.ativo {
         display: flex;
     }
 
     .menu-hamburguer {
         display: block;
-        font-size: 35px;
+        font-size: 26px; /* Adaptado */
         color: #C4955D;
         cursor: pointer;
     }
 
-    /* Oculta botão 'Fale Conosco' no header em tablets/celular */
     .botao-fale-conosco {
         display: none;
     }
 
-    /* Ajusta a Seção Início */
     .inicio {
-        padding: 150px 50px 50px;
+        padding: 110px 40px 40px; /* Adaptado */
         flex-direction: column;
         height: auto;
         text-align: center;
@@ -624,12 +619,12 @@
     .inicio-hero, .inicio-imagem {
         width: 100%;
         align-items: center;
-        margin-top: 50px;
+        margin-top: 38px; /* Adaptado */
     }
 
     .inicio-imagem img {
         width: 100%;
-        max-width: 500px;
+        max-width: 375px; /* Adaptado de 500px */
     }
 
     .contadores {
@@ -637,23 +632,19 @@
         justify-content: center;
     }
     
-    /* Slider ocupando 80% da tela */
     .sobre .container {
         width: 80%;
     }
     
-    /* Espaçamento entre as imagens do carrossel */
     .carrossel .item {
         padding: 0 10px;
     }
 
-    /* Texto "Sobre" com largura de 90% */
     .sobre p {
         width: 90%;
         text-align: center;
     }
     
-    /* Força os slots (Serviços e Diretrizes) a ocupar 1 linha inteira */
     .servicos-slots, .diretrizes-slots {
         width: 100%;
         min-width: unset;
@@ -665,8 +656,8 @@
     }
 
     .footer {
-        gap: 50px;
-        padding: 50px;
+        gap: 38px;
+        padding: 38px;
     }
 }
 
@@ -676,68 +667,68 @@
 @media (max-width: 768px) {
     
     .inicio-hero h1, .sobre h2, .servicos h2, .caes h2, .diretrizes h2, .popup h2 {
-        font-size: 40px !important; 
+        font-size: 30px !important; /* Adaptado de 40px */
         text-align: center;
-        margin-top: 30px;
+        margin-top: 24px;
     }
 
     .inicio-hero span, .sobre span, .servicos span, .caes span, .diretrizes span {
-        font-size: 18px !important;
+        font-size: 14px !important; /* Adaptado de 18px */
         text-align: center;
         letter-spacing: 2px;
     }
     
     .cabecalho {
-        padding: 15px 20px;
+        padding: 12px 15px; /* Adaptado */
     }
 
     .inicio {
-        padding: 150px 20px 50px;
+        padding: 110px 15px 40px; /* Adaptado */
     }
 
     .inicio-hero p {
-        font-size: 20px;
-        line-height: 30px;
+        font-size: 16px; /* Adaptado de 20px */
+        line-height: 24px;
         text-align: center;
     }
 
     .inicio-hero button {
         width: 100%;
-        font-size: 20px;
-        height: 60px;
+        font-size: 16px; /* Adaptado */
+        height: 50px;
     }
 
     .item {
-        width: 300px;
+        width: 225px; /* Adaptado de 300px */
     }
     @keyframes autoRunSobre {
         from { left: 100%; }
-        to { left: -300px; }
+        to { left: -225px; } /* Ajustado proporcionalmente à div do celular */
     }
 
     .servicos-container, .caes-container, .diretrizes-container {
         width: 90%;
-        margin: 50px auto;
-        gap: 24px;
+        margin: 38px auto;
+        gap: 18px;
     }
 
     .caes-slots {
         width: 100%;
-        margin-top: 40px;
+        margin-top: 30px;
     }
 
     .servicos-slots h3, .diretrizes-slots h3, .caes-slots h3 {
-        font-size: 28px;
+        font-size: 21px; /* Adaptado de 28px */
     }
 
     .slots-p2, .diretrizes-slots p, .caes-slots p {
-        font-size: 18px;
+        font-size: 14px; /* Adaptado de 18px */
     }
 
     .footer {
         flex-direction: column;
-        gap: 40px;
-        padding: 50px 20px;
+        gap: 30px; /* Adaptado */
+        padding: 38px 15px; /* Adaptado */
     }
 
     .footer-logo p {
