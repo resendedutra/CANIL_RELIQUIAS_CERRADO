@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Canil Relíquias do Cerrado</title>
+</head>
+
+<body>
+
+    <header class="cabecalho">
+        <img src="./img/logo-header.svg" alt="imagem-logo-header">
+        
+        <!-- O menu agora usa a tag nav e tem um ID para o JS -->
+        <nav id="menu-links">
+            <a href="#inicio">Inicio</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#servicos">Serviços</a>
+            <a href="#caes">Cães</a>
+            <a href="#selecao">Seleção</a>
+            <a href="#contatos">Contato</a>
+        </nav>
+        
+        <!-- Ícone do Menu Hambúrguer (invisível no desktop) -->
+        <i class="fa-solid fa-bars menu-hamburguer" id="menu-hamburguer"></i>
+        
+        <a href="https://api.whatsapp.com/send?phone=553499735767" target="_blank"><button class="botao-fale-conosco">Fale Conosco</button></a>
+    </header>
+
+    <main>
+
+        <section class="inicio" id="inicio">
+            <div class="inicio-hero">
+                <h1>Canil Relíquias do Cerrado</h1>
+                <span>Especializado em Cães Rottweiler</span>
+                <p>O Canil Relíquias do Cerrado é especializado na criação de cães Rottweiler, unindo a força e a
+                    imponência da raça a um equilíbrio comportamental exemplar. A iniciativa destaca-se por lapidar
+                    exemplares focados na lealdade, na guarda e na preservação das principais características do padrão
+                    da raça.</p>
+                <a href="https://api.whatsapp.com/send?phone=553499735767" target="_blank"><button>Fale com um especialista</button></a>
+                <div class="contadores">
+                    <div class="contador-item">
+                        <h3 class="numero" id="numero1">+0</h3>
+                        <p>Filhotes Vendidos</p>
+                    </div>
+                    <div class="contador-item">
+                        <h3 class="numero" id="numero2">+0</h3>
+                        <p>Clientes Atendidos</p>
+                    </div>
+                    <div class="contador-item">
+                        <h3 class="numero" id="numero3">+0</h3>
+                        <p>Cães Adestrados</p>
+                    </div>
+                </div>
+            </div>
+            <div class="inicio-imagem">
+                <img src="./img/logo-header.svg" alt="imagem-logo-seção-início">
+            </div>
+        </section>
+
+        <section class="sobre" id="sobre">
+            <h2>Sobre</h2>
+            <span>Uma história de sucesso!!!</span>
+            <div class="container" style="--quantidade: 6; --tempo: 7.5s;">
+                <div class="carrossel">
+                    <div class="item" style="--delay: 0s;"><img src="./img/img-carrossel-1.jpg"
+                            alt="imagem-carrossel-1"></div>
+                    <div class="item" style="--delay: 1.5s;"><img src="./img/img-carrossel-2.jpg"
+                            alt="imagem-carrossel-2"></div>
+                    <div class="item" style="--delay: 3s;"><img src="./img/img-carrossel-3.jpg"
+                            alt="imagem-carrossel-3"></div>
+                    <div class="item" style="--delay: 4.5s;"><img src="./img/img-carrossel-4.jpg"
+                            alt="imagem-carrossel-4"></div>
+                    <div class="item" style="--delay: 6s;"><img src="./img/img-carrossel-5.jpg"
+                            alt="imagem-carrossel-5"></div>
+                    <div class="item" style="--delay: 7.5s;"><img src="./img/img-carrossel-6.jpg"
+                            alt="imagem-carrossel-5"></div>
+                </div>
+            </div>
+            <p>
+                A história do Canil Relíquias do Cerrado começou em 02 de janeiro de 2017, com o nascimento do Athos Ecb
+                Fur Reines Blut. Athos é um exemplar impressionante da raça rottweiler, presente do meu primo e grande
+                amigo Leonardo Borges, proprietário do Canil ECB Furn Reines Blut. Com o desenvolvimento de Athos e a
+                manifestação de todas as qualidades desejadas na raça, Léo decidiu enviar uma cadela chamada Jade para
+                acasalar com Athos, e assim nasceu o interesse pela criação.
+                <br>
+                <br>
+                Um marco importante nessa trajetória foi meu primeiro treinamento de guarda e proteção com o treinador e
+                figurante Márcio Cerqueira, renomado no treinamento de cães, especialmente para o esporte IGP. Durante
+                esse treinamento, Athos demonstrou suas habilidades e nos surpreendeu com seu temperamento e qualidade
+                para a função.
+                <br>
+                <br>
+                Combinando beleza, conformação, saúde, temperamento e habilidades para a função, percebi o valor
+                genético que tinha em minhas mãos. Estabeleci parcerias com Léo, adquiri mais matrizes e mantive essa
+                linha de seleção de cães, buscando animais equilibrados, belos, saudáveis e que também apresentassem
+                características de temperamento e função para o trabalho.
+                <br>
+                <br>
+                Assim, continuamos a produzir filhotes selecionados que atendem e satisfazem muitas famílias em todo o
+                Brasil.
+            </p>
+        </section>
+
+        <section class="servicos" id="servicos">
+            <h2>Serviços</h2>
+            <span>Qualidade no que fazemos!!!</span>
+
+            <div class="servicos-container">
+                <div class="servicos-slots" style="--delay: 0s">
+                    <i class="fa-solid fa-dog card-icon"></i>
+                    <h3>Venda de Filhotes</h3>
+                    <p class="slots-p2">Produzimos filhotes de rottweiler visando a seleção genética, buscando animais
+                        aptos, beleza racial, estrutura funcional, saúde física e equilíbrio entre os impulsos.</p>
+                </div>
+
+                <div class="servicos-slots" style="--delay: 0.2s">
+                    <i class="fa-solid fa-house-chimney-window card-icon"></i>
+                    <h3>Hospedagem</h3>
+                    <p class="slots-p2">Prestação de serviço de hospedagem para viagens e treinamento para todos os
+                        tipos de adestramento.</p>
+                </div>
+
+                <div class="servicos-slots" style="--delay: 0.4s">
+                    <i class="fa-solid fa-graduation-cap card-icon"></i>
+                    <h3>Adestramento Básico</h3>
+                    <p class="slots-p2">Ensinamos os 5 (cinco) comandos básicos para uma comunicação com seu cão. Os
+                        cinco comandos são: senta, deita, fica, aqui e junto (sem puxar a guia).</p>
+                </div>
+
+                <div class="servicos-slots" style="--delay: 0.6s">
+                    <i class="fa-solid fa-medal card-icon"></i>
+                    <h3>Adestramento Avançado</h3>
+                    <p class="slots-p2">Ensinamento de truques como cumprimentar, dar a pata, rolar, fingir de morto,
+                        brincadeiras físicas e cognitivas, entre outros.</p>
+                </div>
+
+                <div class="servicos-slots" style="--delay: 0.8s">
+                    <i class="fa-solid fa-shield-dog card-icon"></i>
+                    <h3>Guarda e Proteção</h3>
+                    <p class="slots-p2">Treinamento para a proteção do território e para guarda pessoal.</p>
+                </div>
+
+                <div class="servicos-slots" style="--delay: 1.0s">
+                    <i class="fa-solid fa-brain card-icon"></i>
+                    <h3>Modificação Comportamental</h3>
+                    <p class="slots-p2">Xixi e cocô no lugar certo, não pular nas pessoas, não fugir, respeitar limites
+                        (portas, portões), evitar destruição de objetos, ansiedade de separação, dependência emocional,
+                        mordiscadas, latidos em excesso, comportamento agressivo e possessivo, medo.</p>
+                </div>
+
+                <div class="servicos-slots" style="--delay: 1.2s">
+                    <i class="fa-solid fa-comments card-icon"></i>
+                    <h3>Consultoria Comportamental</h3>
+                    <p class="slots-p2">Atendimento presencial e on-line para identificação dos gatilhos que motivam os
+                        comportamentos a serem modificados e a apresentação de um plano estratégico de trabalho para a
+                        execução e acompanhamento das tarefas e resultados.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="caes" id="caes">
+            <h2>Nossos Cães</h2>
+            <span>Somente cães com pedigree!!!</span>
+            <div class="caes-container">
+                <div class="caes-slots">
+                    <img src="./img/hanna-arredondado.svg" alt="imagem-hanna">
+                    <h3>Hanna</h3>
+                    <h4>Rottweiler</h4>
+                    <p>Fêmea</p>
+                    <button class="caes-pedigree">Pedigree</button>
+                </div>
+                <div class="caes-slots">
+                    <img src="./img/sophie-arredondado.svg" alt="imagem-sophie">
+                    <h3>Sophie</h3>
+                    <h4>Rottweiler</h4>
+                    <p>Fêmea</p>
+                    <button class="caes-pedigree">Pedigree</button>
+                </div>
+                <div class="caes-slots">
+                    <img src="./img/luna-arredondado.svg" alt="imagem-luna">
+                    <h3>Luna</h3>
+                    <h4>Rottweiler</h4>
+                    <p>Fêmea</p>
+                    <button class="caes-pedigree">Pedigree</button>
+                </div>
+                <div class="caes-slots">
+                    <img src="./img/taurus-arredondado.svg" alt="imagem-taurus">
+                    <h3>Taurus</h3>
+                    <h4>Rottweiler</h4>
+                    <p>Macho</p>
+                    <button class="caes-pedigree">Pedigree</button>
+                </div>
+            </div>
+            <dialog class="popup">
+                <h2>Pedigree - Hanna</h2>
+                <img src="./img/hanna-pedigree.jpg" alt="imagem-hanna-pedigree">
+                <button class="voltar-popup">Voltar</button>
+            </dialog>
+            <dialog class="popup">
+                <h2>Pedigree - Sophie</h2>
+                <img src="./img/sophie-pedigree.jpg" alt="imagem-sophie-pedigree">
+                <button class="voltar-popup">Voltar</button>
+            </dialog>
+            <dialog class="popup">
+                <h2>Pedigree - Luna</h2>
+                <img src="./img/luna-pedigree.jpg" alt="imagem-luna-pedigree">
+                <button class="voltar-popup">Voltar</button>
+            </dialog>
+            <dialog class="popup">
+                <h2>Pedigree - Taurus</h2>
+                <img src="./img/taurus-pedigree.jpg" alt="imagem-taurus-pedigree">
+                <button class="voltar-popup">Voltar</button>
+            </dialog>
+        </section>
+
+        <section class="diretrizes" id="selecao">
+            <h2>Diretrizes para Seleção </h2>
+            <span>Entenda cada diretriz de seleção perfeita para cães!!!</span>
+            <div class="diretrizes-container">
+                <div class="diretrizes-slots">
+                    <img src="img/filhote-conformacao.svg" alt="imagem-filhote-conformacao-fisica">
+                    <h3>Conformação Física</h3>
+                    <p>Refere-se ao tamanho médio a grande, corpo musculoso e compacto, cabeça larga e proporcional ao corpo, focinho curto e largo, orelhas triangulares e caídas, olhos de tamanho médio e cor escura, pescoço forte e moderadamente longo, peito amplo e profundo, dorso reto e nivelado, membros anteriores retos e paralelos, membros posteriores fortes e bem angulados, e movimentação fluida e poderosa. Minha criação atende as diretrizes da FCI representada aqui no Brasil pela CBKC. Fonte: Fédération Cynologique Internationale (FCI) e American Kennel Club (AKC).</p>
+                </div>
+                <div class="diretrizes-slots">
+                    <img src="img/filhote-temperamento.svg" alt="imagem-filhote-temperamento">
+                    <h3>Temperamento</h3>
+                    <p>Refere-se à personalidade e comportamento do cão. Isso inclui como o cão interage com humanos, outros animais e o ambiente ao seu redor. O temperamento pode ser influenciado por uma combinação de fatores genéticos e ambientais.</p>
+                </div>
+                <div class="diretrizes-slots">
+                    <img src="img/filhote-beleza.svg" alt="imagem-filhote-beleza">
+                    <h3>Beleza</h3>
+                    <p>Refere-se à aparência física do cão. Isso pode incluir características como a cor e o tipo de pelo, a forma do corpo e a expressão facial. A beleza de um cão é muitas vezes subjetiva e pode variar dependendo das preferências individuais.</p>
+                </div>
+                <div class="diretrizes-slots">
+                    <img src="img/filhote-saude.svg" alt="imagem-filhote-saude">
+                    <h3>Saúde</h3>
+                    <p>Refere-se ao estado físico geral do cão. Isso pode incluir tudo, desde a condição física geral do cão até a presença de quaisquer condições médicas ou genéticas. A saúde de um cão pode ser avaliada através de exames veterinários regulares e testes genéticos.</p>
+                </div>
+                <div class="diretrizes-slots">
+                    <img src="img/filhote-funcionalidade.svg" alt="imagem-filhote-funcionalidade">
+                    <h3>Funcionalidade</h3>
+                    <p>Refere-se à capacidade do cão de desempenhar certas tarefas ou funções. Isso pode incluir tudo, desde habilidades de trabalho, como pastoreio ou busca e resgate, até habilidades de companhia, como ser um bom animal de estimação para a família. A funcionalidade de um cão pode ser avaliada através de testes de desempenho e observação do comportamento do cão em várias situações.</p>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer" id="contatos">
+            <div class="footer-logo">
+                <img src="./img/logo-header.svg" alt="imagem-logo-footer">
+                <p>A melhor hospedagem, o melhor adestrador, os melhores filhotes Rottweiler você só encontra aqui!!!</p>
+            </div>
+            <div class="footer-contatos">
+                <h4>Contatos</h4>
+                <div class="footer-icones">
+                    <a href="https://api.whatsapp.com/send?phone=553499735767" target="_blank"><i class="fa-brands fa-whatsapp card-icon"><span> WhatsApp</span></i></a>
+                    <a href="https://www.instagram.com/canilreliquiasdocerrado/" target="_blank"><i class="fa-brands fa-instagram card-icon"><span> Instagram</span></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100090565088614" target="_blank"><i class="fa-brands fa-facebook card-icon"><span> Facebook</span></i></a>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
+</body>
+
+<script src="script.js"></script>
+
+</html>

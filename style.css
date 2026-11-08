@@ -1,0 +1,751 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Amaranth", sans-serif;
+}
+
+.cabecalho {
+    width: 100vw;
+    height: auto;
+    background: #252525;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 100; /* Aumentado para o menu ficar sobre tudo */
+}
+
+/* Modificado para suportar a tag nav adicionada no html */
+.cabecalho nav {
+    margin: 0px 400px;
+    display: flex;
+}
+
+.cabecalho img {
+    width: 80px;
+    height: auto;
+    border-radius: 40px;
+}
+
+.cabecalho a {
+    font-size: 24px;
+    font-weight: 600;
+    color: #C4955D;
+    text-decoration: none;
+    margin: 0px 15px;
+    white-space: nowrap;
+}
+
+.cabecalho button {
+    width: 200px;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: #C4955D;
+    padding: 15px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+/* Esconde o hambúrguer no Desktop */
+.menu-hamburguer {
+    display: none;
+}
+
+.inicio {
+    width: 100vw;
+    height: 100vh;
+    background: #7C685D;
+    display: flex;
+    align-items: center;
+    padding: 150px;
+}
+
+.inicio-hero {
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin: 100px 0px 0px;
+}
+
+.inicio-hero h1 {
+    font-size: 70px;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+.inicio-hero span {
+    color: #252525;
+    font-size: 35px;
+    font-weight: 700;
+    letter-spacing: 6.5px;
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+
+.inicio-hero p {
+    color: #FFFFFF;
+    font-size: 28px;
+    line-height: 45px;
+    margin: 50px 0px;
+}
+
+.inicio-imagem {
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin: 100px 0px 0px;
+}
+
+.inicio-imagem img {
+    width: 750px;
+    height: auto;
+    border-radius: 400px;
+    box-shadow: 0px 0px 20px 20px rgba(124, 92, 76, 0.4);
+}
+
+.inicio-hero button {
+    background: #252525;
+    color: #FFFFFF;
+    font-size: 28px;
+    width: 500px;
+    height: 80px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.contadores {
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin: 75px 0px;
+    gap: 50px;
+}
+
+.contador-item {
+    background: #252525;
+    color: #FFFFFF;
+    border-radius: 8px;
+    width: 210px;
+    height: auto;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.numero {
+    font-size: 30px;
+    text-align: center;
+    margin: 0px auto;
+}
+
+.contador-item p {
+    font-size: 18px;
+    text-align: center;
+    margin: 0px auto;
+}
+
+.sobre {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.sobre h2{
+    font-size: 70px;
+    font-weight: 600;
+    color: #252525;
+    margin: 50px 0px 0px;
+}
+
+.sobre span {
+    font-size: 32px;
+    color: #7C685D;
+    font-style: italic;
+}
+
+.container {
+    width: 100%;
+    height: 300px;
+    margin: 75px 0px 0px;
+    mask-image: linear-gradient(to right, transparent, #000 10% 90%, transparent);
+    margin-bottom: 50px
+}
+
+.carrossel:hover .item {
+    animation-play-state: paused;
+    filter: grayscale(1);
+}
+
+.carrossel .item:hover {
+    filter: grayscale(0);
+}
+
+.carrossel {
+    width: 100%;
+    display: flex;
+}
+
+.item {
+    width: 500px;
+    height: 300px;
+    position: absolute;
+    left: 100%;
+    animation: autoRunSobre var(--tempo) linear infinite;
+    animation-delay: var(--delay);
+    cursor: pointer;
+}
+
+.item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+@keyframes autoRunSobre {
+    from {
+        left: 100%;
+    }
+
+    to {
+        left: -500px;
+    }
+}
+
+.sobre p {
+    font-size: 24px;
+    line-height: 1.5;
+    width: 50%;
+}
+
+.servicos {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #252525;
+    overflow-x: hidden;
+}
+
+.servicos h2 {
+    font-size: 70px;
+    font-weight: 600;
+    color: #FFFFFF;
+    margin: 50px 0px 0px;
+}
+
+.servicos span {
+    font-size: 32px;
+    color: #FFFFFF;
+    font-style: italic;
+}
+
+.servicos-container {
+    width: 80%;
+    min-height: 100vh;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+    margin: 100px auto;
+}
+
+.servicos-slots {
+    width: 25%;
+    min-width: 300px;
+    min-height: 300px;
+    height: 450px;
+    background: #7C685D;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px;
+    border-radius: 32px;
+    cursor: pointer;
+    
+    opacity: 0;
+    transform: translateX(100vw);
+}
+
+.servicos-slots.animar1 {
+    animation: autoRunServicos 5s ease-out forwards;
+    animation-delay: var(--delay);
+}
+
+.card-icon {
+    font-size: 70px;
+    color: #252525;
+}
+
+.servicos-slots h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin: 30px 0px;
+    text-align: center;
+}
+
+.slots-p2 {
+    font-size: 24px;
+    text-align: justify;
+    color: #252525;
+}
+
+@keyframes autoRunServicos {
+    0% {
+        opacity: 0;
+        transform: translateX(100vw);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.caes {
+    width: 100vw;
+    min-height: 100vh; 
+    height: auto; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #7C685D;
+    overflow-x: hidden;
+}
+
+.caes h2 {
+    font-size: 70px;
+    font-weight: 600;
+    color: #FFFFFF;
+    margin: 50px 0px 0px;
+}
+
+.caes span {
+    font-size: 32px;
+    color: #FFFFFF;
+    font-style: italic;
+}
+
+.caes-container {
+    width: 80%;
+    min-height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 64px;
+    margin: 100px auto;
+}
+
+.caes-slots {
+    width: 300px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+    gap: 8px;
+    margin-top: 80px;
+}
+
+.caes-slots img {
+    width: 200px;
+    border-radius: 100px;
+}
+
+.caes-slots h3 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #252525;
+}
+
+.caes-slots h4 {
+    font-size: 32px;
+    font-weight: 600;
+    color: #252525;
+}
+
+.caes-slots p {
+    font-size: 24px;
+    color: #C4955D;
+}
+
+.caes-slots button {
+    width: 250px;
+    height: 60px;
+    padding: 16px;
+    background: #252525;
+    font-size: 24px;
+    font-weight: 600;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 25px;
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+.popup::backdrop {
+    background: #252525;
+    backdrop-filter: blur(4px); 
+}
+
+.popup {
+    width: 90%;
+    max-width: 600px;
+    padding: 30px;
+    background: #252525;
+    border: none;
+    border-radius: 12px;
+    color: #ffffff;
+    margin: auto;
+}
+
+.popup[open] {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.popup h2 {
+    font-size: 70px;
+    font-weight: 700;
+    color: #C4955D;
+}
+
+.popup img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 6px;
+}
+
+.voltar-popup {
+    width: 150px;
+    height: 60px;
+    background: #C4955D;
+    border: none;
+    border-radius: 30px;
+    font-size: 24px;
+    font-weight: 600;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.diretrizes {
+    width: 100vw;
+    min-height: 100vh;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #FFFFFF;
+    overflow-x: hidden;
+}
+
+.diretrizes h2 {
+    font-size: 70px;
+    font-weight: 600;
+    color: #252525;
+    margin: 50px 0px 0px;
+}
+
+.diretrizes span {
+    font-size: 32px;
+    color: #252525;
+    font-style: italic;
+}
+
+.diretrizes-container {
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+    margin: 100px auto;
+}
+
+.diretrizes-slots {
+    width: 18%;
+    min-width: 300px;
+    min-height: 300px;
+    height: 700px;
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    padding: 32px;
+    border-radius: 32px;
+}
+
+.diretrizes-slots img {
+    width: 100%;
+    border-radius: 16px;
+}
+
+.diretrizes-slots h3 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #252525;
+}
+
+.diretrizes-slots p {
+    font-size: 24px;
+    color: #C4955D;
+}
+
+.footer {
+    width: 100vw;
+    min-height: 300px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    background: #252525;
+    overflow-x: hidden;
+    gap: 350px;
+}
+
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.footer-logo img {
+    width: 200px;
+    height: auto;
+    border-radius: 400px;
+    box-shadow: 0px 0px 20px 20px rgba(124, 92, 76, 0.4);
+}
+
+.footer-logo p {
+    font-size: 22px;
+    color: #FFFFFF;
+    width: 350px;
+    text-align: center;
+}
+
+.footer-contatos {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+}
+
+.footer-contatos h4 {
+    font-size: 48px;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+.footer-icones {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+.card-icon {
+    font-size: 30px;
+    color: #FFFFFF;
+    text-transform: capitalize;
+}
+
+/* ========================================================
+   RESPONSIVIDADE PARA TABLETS & MOBILE (Telas até 1024px)
+======================================================== */
+@media (max-width: 1024px) {
+    
+    /* Configuração do Header com Menu Hambúrguer */
+    .cabecalho {
+        justify-content: space-between;
+        padding: 15px 40px;
+    }
+
+    .cabecalho nav {
+        display: none; /* Escondido por padrão no modo mobile/tablet */
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #252525;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 20px 0;
+        margin: 0;
+    }
+    
+    /* Classe adicionada via JS para exibir o menu */
+    .cabecalho nav.ativo {
+        display: flex;
+    }
+
+    .menu-hamburguer {
+        display: block;
+        font-size: 35px;
+        color: #C4955D;
+        cursor: pointer;
+    }
+
+    /* Oculta botão 'Fale Conosco' no header em tablets/celular */
+    .botao-fale-conosco {
+        display: none;
+    }
+
+    /* Ajusta a Seção Início */
+    .inicio {
+        padding: 150px 50px 50px;
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+    }
+
+    .inicio-hero, .inicio-imagem {
+        width: 100%;
+        align-items: center;
+        margin-top: 50px;
+    }
+
+    .inicio-imagem img {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .contadores {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    /* Slider ocupando 80% da tela */
+    .sobre .container {
+        width: 80%;
+    }
+    
+    /* Espaçamento entre as imagens do carrossel */
+    .carrossel .item {
+        padding: 0 10px;
+    }
+
+    /* Texto "Sobre" com largura de 90% */
+    .sobre p {
+        width: 90%;
+        text-align: center;
+    }
+    
+    /* Força os slots (Serviços e Diretrizes) a ocupar 1 linha inteira */
+    .servicos-slots, .diretrizes-slots {
+        width: 100%;
+        min-width: unset;
+        height: auto;
+    }
+
+    .diretrizes-slots {
+        padding: 24px;
+    }
+
+    .footer {
+        gap: 50px;
+        padding: 50px;
+    }
+}
+
+/* ========================================================
+   RESPONSIVIDADE EXCLUSIVA PARA CELULARES (Telas até 768px)
+======================================================== */
+@media (max-width: 768px) {
+    
+    .inicio-hero h1, .sobre h2, .servicos h2, .caes h2, .diretrizes h2, .popup h2 {
+        font-size: 40px !important; 
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .inicio-hero span, .sobre span, .servicos span, .caes span, .diretrizes span {
+        font-size: 18px !important;
+        text-align: center;
+        letter-spacing: 2px;
+    }
+    
+    .cabecalho {
+        padding: 15px 20px;
+    }
+
+    .inicio {
+        padding: 150px 20px 50px;
+    }
+
+    .inicio-hero p {
+        font-size: 20px;
+        line-height: 30px;
+        text-align: center;
+    }
+
+    .inicio-hero button {
+        width: 100%;
+        font-size: 20px;
+        height: 60px;
+    }
+
+    .item {
+        width: 300px;
+    }
+    @keyframes autoRunSobre {
+        from { left: 100%; }
+        to { left: -300px; }
+    }
+
+    .servicos-container, .caes-container, .diretrizes-container {
+        width: 90%;
+        margin: 50px auto;
+        gap: 24px;
+    }
+
+    .caes-slots {
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    .servicos-slots h3, .diretrizes-slots h3, .caes-slots h3 {
+        font-size: 28px;
+    }
+
+    .slots-p2, .diretrizes-slots p, .caes-slots p {
+        font-size: 18px;
+    }
+
+    .footer {
+        flex-direction: column;
+        gap: 40px;
+        padding: 50px 20px;
+    }
+
+    .footer-logo p {
+        width: 100%;
+    }
+
+    .footer-contatos {
+        align-items: center;
+        text-align: center;
+    }
+}
