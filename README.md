@@ -4,6 +4,10 @@
   <h2>Telas Desktop e Mobile</h2>
   <img width="600" height="auto" alt="image" src="https://github.com/user-attachments/assets/81ca42a7-98bf-4315-9563-c37d7ecaff85" />
   <img width="140" height="auto" alt="image" src="https://github.com/user-attachments/assets/d5535d3c-5d59-4193-917b-053e77dc6454" />
+  <br>
+  Link do site no servidor oficial: https://canilreliquiasdocerrado.com.br/
+  <br>
+  Link do site no GitHub: https://resendedutra.github.io/CANIL_RELIQUIAS_CERRADO/
 <div>
 <br>
 <div>
